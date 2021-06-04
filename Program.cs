@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Data.Sqlite;
+using System.Data.SQLite;
 
 namespace ServerReports
 {
@@ -16,6 +16,8 @@ namespace ServerReports
 
             var report = Controller.CreateReport(400, 100, 20, 23, 15.50, 24, 200, "Lunch");
             Console.WriteLine(report.ToString());
+
+            Database.AccessDatabase();
             Console.ReadLine();
         }
     }
