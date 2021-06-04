@@ -17,7 +17,7 @@ namespace ServerReports
             var report = Controller.CreateReport(400, 100, 20, 23, 15.50, 24, 200, "Lunch");
             Console.WriteLine(report.ToString());
 
-            Database.AccessDatabase();
+            SQLiteAccess.SaveServer(nicolo);
             Console.ReadLine();
         }
     }
