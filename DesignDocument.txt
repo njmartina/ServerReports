@@ -1,0 +1,15 @@
+Server Reports Progam:
+
+1. The user shall enter their name and date of birth to create a profile.
+2. The user shall enter the date, whether it was a dinner or lunch shift, total sales, breakdown of the sales,
+	guest count, and total tips made.
+3. The user shall be able to view past entries individually.
+4. The user shall be able to view a list of all entries.
+5. The user shall be able to view total amount of sales, guests, and tips by either week or month.
+
+Classes:
+
+Server - first name, last name, date of birth 
+Report - shiftType, foodSales, liquorSales, beerSales, wineSales, bevSales, guestCount, totalTips
+Controller - methods
+
