@@ -11,13 +11,14 @@ namespace ServerReports
     {
         static void Main(string[] args)
         {
-            var nicolo = Controller.CreateServer("Nicolo", "Martina", new DateTime(1994, 1, 11));
-            Console.WriteLine(nicolo.ToString());
+            var mark = Controller.CreateServer("Mark", "Martina", new DateTime(1961, 6, 6));
 
             var report = Controller.CreateReport(400, 100, 20, 23, 15.50, 24, 200, "Lunch");
             Console.WriteLine(report.ToString());
 
-            SQLiteAccess.SaveServer(nicolo);
+            SQLiteAccess.SaveServer(mark);
+
+            Controller.DisplayServers();
             Console.ReadLine();
         }
     }

@@ -17,5 +17,15 @@ namespace ServerReports
         {
             return new Report(foodSales, liquorSales, beerSales, wineSales, bevSales, guestCount, totalTips, shiftType);
         }
+
+        public static void DisplayServers()
+        {
+            var servers = SQLiteAccess.LoadServers();
+            
+            foreach (Server server in servers)
+            {
+                Console.WriteLine(server.ToString());
+            }
+        }
     }
 }
